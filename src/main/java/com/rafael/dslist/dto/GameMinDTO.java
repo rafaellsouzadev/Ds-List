@@ -3,6 +3,7 @@ package com.rafael.dslist.dto;
 import java.io.Serializable;
 
 import com.rafael.dslist.entities.Game;
+import com.rafael.dslist.projections.GameMinProjection;
 
 public class GameMinDTO implements Serializable{
 
@@ -20,6 +21,14 @@ public class GameMinDTO implements Serializable{
 		this.year = obj.getYear();
 		this.imgUrl = obj.getImgUrl();
 		this.shortDescription = obj.getShortDescription();
+	}
+	
+	public GameMinDTO(GameMinProjection projection) {
+		this.id = projection.getId();
+		this.title = projection.getTitle();
+		this.year = projection.getYear();
+		this.imgUrl = projection.getImgUrl();
+		this.shortDescription = projection.getShortDescription();
 	}
 
 	public Long getId() {
