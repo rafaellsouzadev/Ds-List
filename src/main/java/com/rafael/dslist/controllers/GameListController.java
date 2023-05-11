@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rafael.dslist.dto.GameListDTO;
 import com.rafael.dslist.dto.GameMinDTO;
-import com.rafael.dslist.projections.GameMinProjection;
 import com.rafael.dslist.services.GameListService;
 import com.rafael.dslist.services.GameService;
 
